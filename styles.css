@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(adrian-pelletier-HWXSmUoP66E-unsplash.jpg);
+  opacity: 90%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin-top: 25%;
+  overflow: hidden;
+}
+
+.wrapper {
+  background-color: hsl(180, 1%, 18%);
+  margin: auto;
+
+  max-width: 600px;
+  padding: 25px;
+
+  border-radius: 25px;
+  box-shadow: 7px 10px 21px 5px rgba(0, 0, 0, 0.81);
+  -webkit-box-shadow: 7px 10px 21px 5px rgba(0, 0, 0, 0.81);
+  -moz-box-shadow: 7px 10px 21px 5px rgba(0, 0, 0, 0.81);
+}
+
+.display {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 600px;
+  padding: 25px 0;
+}
+.clear {
+  height: 50px;
+  width: 100px;
+  color: white;
+  background-color: hsl(10, 94%, 60%);
+}
+
+.text-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  background-color: white;
+  padding: 25px 150px;
+  box-shadow: 7px 8px 8px -2px rgba(0, 0, 0, 0.73);
+  -webkit-box-shadow: 7px 8px 8px -2px rgba(0, 0, 0, 0.73);
+  -moz-box-shadow: 7px 8px 8px -2px rgba(0, 0, 0, 0.73);
+}
+
+.buttons {
+  display: grid;
+  max-width: 600px;
+  max-height: 750px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 100px);
+  gap: 15px;
+}
+
+button {
+  box-shadow: 7px 8px 8px -2px rgba(0, 0, 0, 0.73);
+  -webkit-box-shadow: 7px 8px 8px -2px rgba(0, 0, 0, 0.73);
+  -moz-box-shadow: 7px 8px 8px -2px rgba(0, 0, 0, 0.73);
+  background-color: hsl(211, 87%, 25%);
+  color: white;
+  font-size: x-large;
+}
+button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.button-divide {
+  background-color: hsl(37, 100%, 6%);
+}
+
+.button-multi {
+  background-color: hsl(37, 100%, 6%);
+}
+.button-minus {
+  background-color: hsl(37, 100%, 6%);
+}
+.button-plus {
+  background-color: hsl(37, 100%, 6%);
+}
+
+#gallery {
+  height: 100vmax;
+  width: 140vmax;
+  position: absolute;
+}
+
+.meta-link {
+  align-items: center;
+  backdrop-filter: blur(3px);
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  bottom: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: inline-flex;
+  gap: 5px;
+  left: 10px;
+  padding: 10px 20px;
+  position: fixed;
+  text-decoration: none;
+  transition: background-color 400ms, border-color 400ms;
+  z-index: 10000;
+}
