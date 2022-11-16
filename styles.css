@@ -34,12 +34,25 @@ body {
   align-items: center;
   max-width: 600px;
   padding: 25px 0;
+  /* background-image: url(fiiireeeeeee2.0.jpg);
+  background-position: 25px;
+  background-size: cover;
+  background-repeat: no-repeat; */
+  
 }
-.clear {
+.LED {
   height: 50px;
-  width: 100px;
+  width: 50px;
+  border-radius: 50%;
+  color: white;
+  background-color: red;
+}
+.clear{
   color: white;
   background-color: hsl(10, 94%, 60%);
+}
+.button-backSpace{
+  background-color: hsl(243, 90%, 20%);
 }
 
 .text-box {
@@ -60,8 +73,12 @@ body {
   max-width: 600px;
   max-height: 750px;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 100px);
+  grid-template-rows: repeat(5, 100px);
   gap: 15px;
+}
+.button-backSpace{
+  grid-column-start: 3;
+  grid-column-end: 5;
 }
 
 button {
