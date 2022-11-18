@@ -15,6 +15,10 @@ body {
   overflow: hidden;
 }
 
+p{
+  color: white;
+}
+
 .wrapper {
   background-color: hsl(180, 1%, 18%);
   margin: auto;
@@ -53,6 +57,7 @@ body {
 }
 .button-backSpace{
   background-color: hsl(243, 90%, 20%);
+  
 }
 
 .text-box {
@@ -79,14 +84,15 @@ body {
 .button-backSpace{
   grid-column-start: 3;
   grid-column-end: 5;
+  background: linear-gradient(145deg,
+  #262626, #606060);
+  box-shadow: 11px 11px 22px #141414,
+  -11px -11px 22px #525252;
+  color: wheat;
+  border-radius: 25px;
 }
 
 button {
-  box-shadow: 7px 8px 8px -2px rgba(0, 0, 0, 0.73);
-  -webkit-box-shadow: 7px 8px 8px -2px rgba(0, 0, 0, 0.73);
-  -moz-box-shadow: 7px 8px 8px -2px rgba(0, 0, 0, 0.73);
-  background-color: hsl(211, 87%, 25%);
-  color: white;
   font-size: x-large;
 }
 button:hover {
@@ -131,3 +137,79 @@ button:hover {
   transition: background-color 400ms, border-color 400ms;
   z-index: 10000;
 }
+
+
+
+
+.design{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  outline: none;
+  border:4 rpx #090909 solid;
+  background: linear-gradient(145deg, 
+  #171717, #444245);
+  box-shadow: inset 2px 2px 0px #7d7c7e,
+  inset -2px -2px 0px #1c1c1c;
+  color: wheat;
+  }
+  .button-backSpace{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+  
+  outline: none;
+  border:4 rpx #090909 solid;
+  background: linear-gradient(145deg, 
+  #171717, #444245);
+  box-shadow: inset 2px 2px 0px #7d7c7e,
+  inset -2px -2px 0px #1c1c1c;
+  color: wheat;
+  }
+  .button-backSpace:hover{
+    color: skyblue;
+  font-size: xx-large;
+  }
+  .button-backSpace::before{
+    position: absolute;
+    content: '';
+    height: 110px;
+    width: 270px;
+    top: 50%;
+    left: -55%;
+    transform: translate(50%, -50%);
+    border-radius: inherit;
+    background: linear-gradient(145deg,
+    #262626, #606060);
+    box-shadow: 11px 11px 22px #141414,
+    -11px -11px 22px #525252;
+    z-index: -1;
+  }
+  .design:hover{
+  color: skyblue;
+  font-size: xx-large;
+  }
+  .design span{
+  font-size: 2.5cm;
+  }
+  .design::before{
+  position: absolute;
+  content: '';
+  height: 110px;
+  width: 110px;
+  top: 50%;
+  left: -67.5%;
+  transform: translate(50%, -50%);
+  border-radius: inherit;
+  background: linear-gradient(145deg,
+  #262626, #606060);
+  box-shadow: 11px 11px 22px #141414,
+  -11px -11px 22px #525252;
+  z-index: -1;
+  }

@@ -138,6 +138,7 @@ function pressPlus() {
   }
   clear.addEventListener("click", del);
   equal.addEventListener("click", del);
+  bckSpace.addEventListener("click", del);
   function del() {
     checkArr.splice(0, checkArr.length);
   }
@@ -155,6 +156,7 @@ function pressMinus() {
   }
   clear.addEventListener("click", del);
   equal.addEventListener("click", del);
+  bckSpace.addEventListener("click", del);
   function del() {
     checkArr.splice(0, checkArr.length);
   }
@@ -172,6 +174,7 @@ function pressMulti() {
   }
   clear.addEventListener("click", del);
   equal.addEventListener("click", del);
+  bckSpace.addEventListener("click", del);
   function del() {
     checkArr.splice(0, checkArr.length);
   }
@@ -189,6 +192,7 @@ function pressDivide() {
   }
   clear.addEventListener("click", del);
   equal.addEventListener("click", del);
+  bckSpace.addEventListener("click", del);
   function del() {
     checkArr.splice(0, checkArr.length);
   }
@@ -209,6 +213,7 @@ function pressDot() {
   minus.addEventListener("click", del);
   multi.addEventListener("click", del);
   divide.addEventListener("click", del);
+  bckSpace.addEventListener("click", del);
 
   function del() {
     checkArr.splice(0, checkArr.length);
